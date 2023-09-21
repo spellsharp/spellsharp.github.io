@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Resume</title>
+</head>
+<style>
+
+    table, th, td {
+        border: 1px solid #747474;
+        border-collapse: collapse;
+        padding: 12px;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .mainbody {
+        display: flex; 
+        margin: 0;
+    }
+
+    .leftsection {
+        font-family: sans-serif;
+        min-width: 440px;
+        background-color: #193c61; 
+        /* width: 350px;  */
+        height: 100%; 
+        min-height: 200vh;
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .label {
+        margin-left: 0.5rem; 
+        font-weight: bold;
+        margin-top: 0.5rem;
+    }
+    .labelContent {
+        margin-left: 0.5rem; 
+        line-height: 1.5;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .leftHeading {
+        margin-left: 0.5rem; 
+        font-weight: bold; 
+        font-size: 1.6rem;
+    }
+
+    ul {
+        max-width: 320px; 
+        color: #ffffff; 
+        list-style-type: disc; 
+        list-style-position: inside; 
+        line-height: 2;
+    }
+    .rightHeading {
+        font-weight: bold; 
+        font-size: 3.2rem;
+        font-family: sans-serif
+    }
+    
+    .rightSubHeading {
+        font-weight: bold; 
+        font-size: 2rem; 
+        font-family: sans-serif; 
+        margin-top: 2.5rem;
+    }
+
+    .rightsection {
+        margin-top: 2.5rem; 
+        margin-left: 2.5rem; 
+        max-width: 42rem; 
+        color: #1e3f5f; 
+        font-family: sans-serif;
+    }
+
+    .smallscreen {
+        display: none;
+    }
+
+    .pfp {
+        border: 5px solid white;
+        border-radius: 9999px; 
+        width: 200px; 
+        height: 200px; 
+        margin-top: 1.25rem; 
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3rem;
+    }
+
+    @media (max-width: 500px) {
+        .leftsection {
+            display: none;
+        }
+        .rightsection {
+            margin-left: 1rem;
+        }
+        .smallscreen { @media  (max-width: 350px) {
+        .leftsection {
+            display: none;
+        }
+        .rightsection {
+            margin-left: 1rem;
+        }
+        .smallerscreen {
+            display: flex;
+            width: 100vw;
+            background-color: #193c61;
+        }
+    }
+            display: flex;
+            width: 100vw;
+            background-color: #193c61;
+        }
+        .educationTable {
+            display: none;
+        }
+    }
+
+
+    .dropdownContent {
+        display: none;
+        position: absolute;
+        background-color: rgba(13, 54, 99, 0.95);
+        min-width: 250px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        padding: 10px;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin-left: 0.5rem;
+    }
+
+    .dropdown:hover .dropdownContent {
+        display: block;
+    }
+
+    .childDiv {
+        display: flex;
+        flex-direction: column;
+        margin-left:auto;
+        margin-right:auto;
+        width: 100%;
+    }
+
+    .leftHeading {
+        font-size: x-large;
+    }
+    
+</style>
+<body>
+    <div class="smallscreen">
+        <div class="childDiv">
+            <img src="/assets/sharan.jpg" alt="profile" class="pfp">
+            <section style="color:white;" class="dropdown">
+                <div class="leftHeading">Contact</div>
+                
+                    <hr style="height: 1px; margin-left: 0.5rem; border: none; background-color: #fff;">
+                    <br/>
+                    <div class="dropdownContent">
+                        <div class="label">Phone</div>
+                        <div class="labelContent">+91 7299497118</div>
+                        <div class="label">Email</div>
+                        <div class="labelContent">sharanv021104@gmail.com</div>
+                        <div class="label">Address</div>
+                        <div class="labelContent">218, Vrindavan Hostel, Amritanandamayi Ashram, Kerala</div>
+                    </div>
+            </section>
+            <br />
+            <section style="color:white;" class="dropdown">
+                <div class="leftHeading">Education</div>
+                    <hr style="height: 1px; margin-left: 0.5rem; border: none; background-color: #fff;">
+                    <br/>
+                    <div class="dropdownContent">
+                        <table>
+                            <tr>
+                                <th>Year of Education</th>
+                                <th>Education Board</th>
+                                <th>Grade/Percentage</th>
+                                <th>School</th>
+                            </tr>
+                            <tr>
+                                <td>2022</td>
+                                <td>12th CBSE Board</td>
+                                <td>97%</td>
+                                <td>P.S. Senior Secondary School</td>
+                            </tr>
+                            <tr>
+                                <td>2026</td>
+                                <td>B Tech in Computer Science and Engineering (with spl. in Artificial Engineering)</td>
+                                <td>9.58 CGPA</td>
+                                <td>Amrita School of Computing</td>
+                            </tr>
+                        </table>
+                    </div>
+            </section>
+            <br />
+            <section style="color:white" class="dropdown">
+                <div class="leftHeading">Expertise</div>
+                <hr style="height: 1px; margin-left: 0.5rem; border: none; background-color: #fff;">
+                <br/>
+                <div class="dropdownContent">
+                    <ul>
+                        <li>UI/UX</li>
+                        <li>Web Development</li>
+                        <li>Flutter Mobile Development</li>
+                        <li>User Flows</li>
+                        <li>Wireframing</li>
+                    </ul>
+                </div>
+            </section>
+            <br />
+            <section style="color:white" class="dropdown">
+                <div class="leftHeading">Language</div>
+                <hr style="height: 1px; margin-left: 0.5rem; border: none; background-color: #fff;">
+                <br/>
+                <div class="dropdownContent">
+                    <ul>
+                        <li>English</li>
+                        <li>Tamil</li>
+                        <li>Hindi</li>
+                        <li>Malayalam</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="mainbody">
+        <section id="leftside" class="leftsection">
+            <div style="margin-left: 0.5rem; color: #fff; margin-bottom: 10%">
+                <img src="/assets/sharan.jpg" alt="profile" class="pfp">
+                <section>
+                    <div class="leftHeading">Contact</div>
+                    <hr style="height: 1px; margin-left: 0.5rem; border: none; background-color: #fff;">
+                    <br/>
+                    <div class="label">Phone</div>
+                    <div class="labelContent">+91 7299497118</div>
+                    <div class="label">Email</div>
+                    <div class="labelContent">sharanv021104@gmail.com</div>
+                    <div class="label">Address</div>
+                    <div class="labelContent">218, Vrindavan Hostel, Amritanandamayi Ashram, Kerala</div>
+                </section>
+                <br />
+                
+                <br />
+                <section>
+                    <div class="leftHeading">Expertise</div>
+                    <hr style="height: 1px; margin-left: 0.5rem; border: none; background-color: #fff;">
+                    <br/>
+                    <ul>
+                        <li>UI/UX</li>
+                        <li>Web Development</li>
+                        <li>Flutter Mobile Development</li>
+                        <li>User Flows</li>
+                        <li>Wireframing</li>
+                    </ul>
+                </section>
+                <section>
+                    <div class="leftHeading">Language</div>
+                    <hr style="height: 1px; margin-left: 0.5rem; border: none; background-color: #fff;">
+                    <br/>
+                    <ul>
+                        <li>English</li>
+                        <li>Tamil</li>
+                        <li>Hindi</li>
+                        <li>Malayalam</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <section class="rightsection">
+            <div class="rightHeading">Shrisharanyan Vasu</div>
+            <div id="position" style="font-size: 2rem;">Junior Developer</div>
+            <div style="margin-top: 1rem;">Hello! I am Shrisharanyan Vasu (Sharan). I am a passionate learner with a thirst for knowledge. I also have drive when it comes to finishing a project. I'm versatile, quick-thinking and intuitive.</div>
+            <div class="rightSubHeading">Projects</div>
+            <hr style="height: 1px; border: none; background-color: #1e3f5f; margin-bottom: 2.5rem;">
+            <ul style="margin-left: 0.5rem; color:#193c61; line-height: 1.25;">
+                <span style="font-weight: bold">Academize</span> 
+                <p>A web application built on the React JS framework and Django python framework. It is an app for the college faculty to easily analyze their students' progress using visually interactive graphs and charts</p>
+                <span style="font-weight: bold">Trasheroo</span> 
+                <p>A mobile application built on the Flutter and uses Firebase. It is an app that has established a community. A community that enables any user to take their phones out and click a snap of any trash dump and upload it as an issue. Anybody who wants to volunteer for it can volunteer to clean the trash dump.</p>
+                <span style="font-weight: bold">Cross-On</span> 
+                <p>A web application built on React JS and Django-Firebase dual backend. It is a community app that enables alumni across the world connect with experienced mentors to seek guidance on a wide range of concerns such as startups, jobs, etc.</p>
+            </ul>
+            <section class="educationTable">
+                <div class="rightSubHeading">Education</div>
+                <hr style="height: 1px; margin-left: 0.5rem; border: none; background-color: #1e3f5f;">
+                <br/>
+                <table>
+                    <tr>
+                        <th>Year of Education</th>
+                        <th>Education Board</th>
+                        <th>Grade/Percentage</th>
+                        <th>School</th>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>12th CBSE Board</td>
+                        <td>97%</td>
+                        <td>P.S. Senior Secondary School</td>
+                    </tr>
+                    <tr>
+                        <td>2026</td>
+                        <td>B Tech in Computer Science and Engineering (with spl. in Artificial Engineering)</td>
+                        <td>9.58 CGPA</td>
+                        <td>Amrita School of Computing</td>
+                    </tr>
+                </table>
+            </section>
+            <div class="rightSubHeading">Extracurriculars</div>
+            <hr style="height: 1px; border: none; background-color: #1e3f5f; margin-bottom: 2.5rem;">
+            <div style="display: flex; flex-direction: column; margin-left: 0.5rem; line-height: 1.5;">
+                <div>Learning Carnatic Music (Vocal) for more than a decade.</div>
+                <div>Been part of the college band and have performed at several music programmes.</div>
+                <div>Proficient in Tennis and have received professional training for 2 years</div>
+            </div>
+            <div class="rightSubHeading">Hobbies</div>
+            <hr style="height: 1px; border: none; background-color: #1e3f5f; margin-bottom: 2.5rem;">
+            <div style="display: flex; flex-direction: column; margin-left: 0.5rem; line-height: 1.5;">
+                <div>Singing | Movies and Series | Reading</div>
+            </div>
+
+        </section>
+    </div>
+</body>
+</html>

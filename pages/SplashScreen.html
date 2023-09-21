@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link id="theme-style" rel="stylesheet" href="../styles/SplashScreen.css" />
+  </head>  
+  <body id="content-container">
+    <div class="container">
+      <span class="title">F</span>
+      <span class="title">E</span>
+      <span class="title">R</span>
+      <span class="title">R</span>
+      <span class="title">A</span>
+      <span class="title">R</span>
+      <span class="title">I</span>
+    </div>
+  </body>
+  <style>
+    .fade-out {
+      opacity: 0;
+      transition: opacity 0.5s ease-out;
+    }
+  </style>
+  <script>
+    setTimeout(function () {
+      var contentContainer = document.getElementById("content-container");
+      contentContainer.classList.add("fade-out");
+      setTimeout(function () {
+        window.location.href = "LandingPage.html";
+      }, 500);
+    }, 2000); // 2000 milliseconds = 2 seconds
+  </script>
+</html>

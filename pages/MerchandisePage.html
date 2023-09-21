@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merchandise Page</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/cursor.css" />
+    <script src="../scripts/MerchandisePage.js"></script>
+  </head>
+  <style>
+    /* Reset some default styles */
+    body,
+    h1,
+    h2,
+    h3,
+    p,
+    ul,
+    ol,
+    li,
+    span {
+      text-align: left;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Basic styling */
+    body {
+      font-family: poppins;
+      background: linear-gradient(
+        180deg,
+        #000 0%,
+        rgba(137, 0, 0, 1) 72.4%,
+        #000 100%
+      );
+    }
+
+    header {
+      color: white;
+      text-align: left;
+      padding: 20px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      border: 1px solid #ccc;
+      padding: 20px;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 30px;
+    }
+
+    .product img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .price {
+      color: #870000;
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    button {
+      background-color: #870000;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #5f0000;
+    }
+    .purchase {
+      background: #fb2c2c;
+      border-radius: 5%;
+      color: black;
+      transition: background-color 0.3s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .purchase:hover {
+      background-color: rgb(115, 13, 13);
+      color: #ccc;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>
+        <a
+          style="color: white; text-decoration: none; font-size: 72px"
+          href="./LandingPage.html"
+          >Ferrari</a
+        >
+      </h1>
+      <hr />
+    </header>
+    <main>
+      <section class="products">
+        <div
+          class="product"
+          id="product1"
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          "
+        >
+          <div>
+            <img
+              src="https://images.footballfanatics.com/scuderia-ferrari/scuderia-ferrari-2023-team-charles-leclerc-t-shirt_ss4_p-13368477+u-1a0txatu76m1w7bkbbaj+v-b38414ba03b0479ebc7e8f9e4116ab11.jpg?_hv=2&w=900"
+              alt="Product 1"
+            />
+            <hr />
+            <h3>Scuderia Ferrari 2023 Team Charles Leclerc T-Shirt</h3>
+            <p>
+              Show your love and support for the Scuderia Ferrari F1 team with
+              the official Replica range.
+            </p>
+          </div>
+          <span class="price" id="price1">$29.99</span>
+          <div id="button1" style="display: flex; justify-content: center">
+            <button
+              style="font-family: Poppins; border-radius: 360px"
+              onclick="addToCart(1)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div
+          class="product"
+          id="product2"
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          "
+        >
+          <div>
+            <img
+              src="https://images.footballfanatics.com/scuderia-ferrari/scuderia-ferrari-sf75-no16-winners-bahrain-gp-2022-charles-leclerc-1:18-model_ss4_p-13332198+u-5bxubgzqusj58f3f1yuw+v-53efb356f1ca4578ac7d6590c2217700.jpg?_hv=2&w=900"
+              alt="Product 1"
+            />
+            <hr />
+            <h3>Scuderia Ferrari SF75 No.16 Winners</h3>
+            <p>
+              Own a keepsake of an iconic part of the Formula 1 experience. A
+              brilliant keepsake to remind you of classic moments, and a great
+              decoration as well.
+            </p>
+          </div>
+          <span class="price" id="price2">$375.99</span>
+          <div id="button2" style="display: flex; justify-content: center">
+            <button
+              style="font-family: Poppins; border-radius: 360px"
+              onclick="addToCart(2)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="product"
+          id="product3"
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          "
+        >
+          <div>
+            <img
+              src="https://images.footballfanatics.com/scuderia-ferrari/scuderia-ferrari-race-polo-by-puma-white_ss4_p-13345729+u-f7d5ewqa5ln7ha8c8xfi+v-29455ad19afe4dfd9f237a1f9b430f98.jpg?_hv=2&w=900"
+              alt="Product 1"
+            />
+            <hr />
+            <h3>Scuderia Ferrari Race Polo by Puma - White</h3>
+            <p>
+              Take your Scuderia Ferrari passion from the track to the streets
+              with the official Puma collection.
+            </p>
+          </div>
+          <span class="price" id="price3">$44.99</span>
+          <div id="button3" style="display: flex; justify-content: center">
+            <button
+              style="font-family: Poppins; border-radius: 360px"
+              onclick="addToCart(3)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="product"
+          id="product4"
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          "
+        >
+          <div>
+            <img
+              src="https://images.footballfanatics.com/scuderia-ferrari/scuderia-ferrari-race-hooded-sweat-jacket-by-puma_ss4_p-13345745+u-1irloczv7brudxvlvq3v+v-ba9ec4aff9e04678b4b593e63beb2a0b.jpg?_hv=2&w=900"
+              alt="Product 1"
+            />
+            <hr />
+            <h3>Scuderia Ferrari Race Polo by Puma - Black</h3>
+            <p>
+              Take your Scuderia Ferrari passion from the track to the streets
+              with the official Puma collection.
+            </p>
+          </div>
+          <span class="price" id="price4">$99.99</span>
+          <div id="button4" style="display: flex; justify-content: center">
+            <button
+              style="font-family: Poppins; border-radius: 360px"
+              onclick="addToCart(4)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="product"
+          id="product5"
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          "
+        >
+          <div>
+            <img
+              src="https://images.footballfanatics.com/scuderia-ferrari/scuderia-ferrari-race-all-over-print-sweat-hoodie-by-puma-black_ss4_p-12095599+u-101lu9gimpgy9iey5e45+v-09d530828ca346b9a04a7295f63b3bba.jpg?_hv=2&w=900"
+              alt="Product 1"
+            />
+            <hr />
+            <h3>
+              Scuderia Ferrari Race All Over Print Sweat Hoodie by Puma - Black
+            </h3>
+            <p>Get a warmer feel with this fantastic hoodie.</p>
+          </div>
+          <span class="price" id="price5">$189.99</span>
+          <div id="button5" style="display: flex; justify-content: center">
+            <button
+              style="font-family: Poppins; border-radius: 360px"
+              onclick="addToCart(5)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="product"
+          id="product6"
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          "
+        >
+          <div>
+            <img
+              src="https://images.footballfanatics.com/scuderia-ferrari/scuderia-ferrari-matte-thermal-mug_ss4_p-12046337+u-7hl8dwwoeduavyiytbqg+v-830b182941564d54b47cfe60bf69e03e.jpg?_hv=2&w=900"
+              alt="Product 1"
+            />
+            <hr />
+            <h3>Scuderia Ferrari Matte Thermal Mug</h3>
+            <p>
+              Keep your drinks warm on the go with this Scuderia Ferrari thermal
+              mug.
+            </p>
+          </div>
+          <span class="price" id="price6">$19.99</span>
+          <div id="button6" style="display: flex; justify-content: center">
+            <button
+              style="font-family: Poppins; border-radius: 360px"
+              onclick="addToCart(6)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="product"
+          id="product7"
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          "
+        >
+          <div>
+            <img
+              src="https://images.footballfanatics.com/scuderia-ferrari/scuderia-ferrari-puma-classic-cap-black_ss4_p-13368490+u-l02ev6ubr44w0zp5wr7v+v-38a57a139d064072b03b2d8239b42b94.jpg?_hv=2&w=900"
+              alt="Product 2"
+            />
+            <hr />
+            <h3>Scuderia Ferrari Puma Classic Cap - Black</h3>
+            <p>
+              Keep the sun off and flaunt your style. This is the perfect way to
+              stay cool and strut your stuff like a pro.
+            </p>
+          </div>
+          <span class="price" id="price7">$40.99</span>
+          <div id="button7" style="display: flex; justify-content: center">
+            <button
+              style="font-family: Poppins; border-radius: 360px"
+              onclick="addToCart(7)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="product"
+          id="product8"
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          "
+        >
+          <div>
+            <img
+              src="https://images.footballfanatics.com/scuderia-ferrari/scuderia-ferrari-puma-padded-gilet_ss4_p-13368561+u-e91zyf3b7zkn2eakuu5x+v-2c0690ee72b148f6815a1f32eef4ca4b.jpg?_hv=2&w=900"
+              alt="Product 2"
+            />
+            <hr />
+            <h3>Scuderia Ferrari Puma Padded Gilet</h3>
+            <p>
+              For the ultimate F1 look, this jacket is an absolute must-have.
+            </p>
+          </div>
+          <span class="price" id="price8">$80.99</span>
+          <div id="button8" style="display: flex; justify-content: center">
+            <button
+              style="font-family: Poppins; border-radius: 360px"
+              onclick="addToCart(8)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div style="display: flex; justify-content: center; margin-bottom: 100px">
+      <button
+        style="
+          padding: 15px;
+          font-size: 16px;
+          width: 30%;
+          border-radius: 360px;
+          font-family: Poppins;
+        "
+        onclick="handlePurchase()"
+      >
+        Go To Purchase
+      </button>
+    </div>
+  </body>
+</html>

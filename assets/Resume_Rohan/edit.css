@@ -1,0 +1,123 @@
+*{
+    /* margin: 0;
+    padding: 0; */
+    font-family: sans-serif;
+    float: center;
+}
+.heading{
+    display: flex;
+    justify-self: left;
+}
+.cont{
+    position: absolute; 
+  right: 0; 
+  top: 0;
+}
+/* .me{  */
+     /* border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 50px;
+  height: 50px; */
+/* } */
+.head{
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    padding-left: 280px;
+    padding-right: 280px;
+} 
+.name{
+    color:teal;    
+}
+.me{
+    height: 15vh;
+    width: auto;
+    text-align: center;
+    position: relative;
+    display: block;
+    border-radius: 50% ;
+
+
+}
+.ava{
+    position: relative;
+    background-image: linear-gradient(teal, rgb(200, 200, 200));
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+height: 25vh;
+border-radius: 50%;
+}
+
+.edu{
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 5px 5px lightblue;
+    width: 25%;
+    padding: 20px;
+    background:gainsboro;
+    float: left;
+    margin: 10px;
+    border-radius: 5%;
+    position: relative;
+    height: 39vh;
+
+}
+.amrita{
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 5px 5px lightblue;
+    width: 25%;
+    padding: 20px;
+    background:floralwhite;
+    float: left;
+    margin: 10px;
+    position: relative;
+    height: 35vh;
+}
+.plans{
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 5px 5px lightblue;
+    width: 25%;
+    padding: 20px;
+    background:thistle;
+    float: left;
+    margin: 10px;
+    position: relative;
+    height: 35vh; 
+}
+.logo{
+    position: relative;
+    padding: 20px;
+    height: 20vh;
+}
+  .skll {
+    font-family: 'Lucida Sans', "Courier New", monospace;;
+    /* padding: 20px; */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 5px 5px lightblue;
+    width: 45%;
+    padding: 20px;
+    background:wheat;
+    float: left;
+    margin: 10px;
+    position: relative;
+    height: 35vh; 
+  }
+  .skll-1 {
+    font-family: 'Lucida Sans', "Courier New", monospace;;
+    /* padding: 20px; */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 5px 5px lightblue;
+    width: 35%;
+    padding: 20px;
+    background:wheat;
+    float: left;
+    margin: 10px;
+    position: relative;
+    height: 35vh; 
+  }
